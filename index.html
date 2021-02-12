@@ -18,6 +18,52 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </style>
 <body class="w3-black">
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 5px;
+    }
+    
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #444;
+      color: white;
+    }
+    
+    .fa {font-size:50px;}
+    </style>
+  
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -42,7 +88,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-institution w3-xxlarge"></i>
     <p>INTERSHIP</p>
   </a>
- 
+  <a href="#training" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue">
+    <i class="fa fa-rocket w3-xxlarge"></i>
+    <p>TRAINING</p>
+  </a>
 
   <!---for more side bar options !--->
 
@@ -56,17 +105,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+<div class="w3-sidebar w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:10% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:10% !important">About</a>
     <a href="#Skills" class="w3-bar-item w3-button" style="width:10% !important">Skills</a>
     <a href="#project" class="w3-bar-item w3-button" style="width:10% !important">Projects</a>
     <a href="#internship" class="w3-bar-item w3-button" style="width:10% !important">Internship</a>
-   
+    <a href="#training" class="w3-bar-item w3-button" style="width:10% !important">Training</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:10% !important">CONTACT</a>
   </div>
 </div>
+
 
 <!-- Page Content -->
 
@@ -74,58 +124,136 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sachin dubey</h1>
-    <p>Data Science Enthusiast | Data Analytics | Business Analytics</p>
+    <p>Data Scientist | Data Analyst | Business Analyst </p>
 
-    <img src="https://i.pinimg.com/originals/38/72/31/3872314c27165d2c6a886c4309d6f8d2.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="https://i.pinimg.com/originals/38/72/31/3872314c27165d2c6a886c4309d6f8d2.jpg" alt="boy" class="w3-image" width="1100" height="1200">
   </header>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" >
-    <h2 class="w3-text-light-grey" id="about" >I Am ;</h2>
-    <hr style="width:200px" class="w3-opacity"></hr>
-    <p>Hello ! welcome to my Portfolio. i m sachin dubey, final year B.tech student from Guru Gobind Singh indraprastha Univercity, delhi. Love to do analysis and Visulaization, can make your system data driven, enjoy to work with team, and make network with team with divercifications of fields. Associated with many professional and students for knowledge exchange
+  <div class="w3-content w3-justify  w3-padding-100" >
+    <h2 class="w3-text-light-grey" id="about" >About Me </h2>
+    <hr style="width:150px" class="w3-center"></hr>
+    <p><img src="https://scontent.fdel13-1.fna.fbcdn.net/v/t1.0-9/149563864_2805670893039739_2506648923909709259_o.jpg?_nc_cat=102&ccb=3&_nc_sid=09cbfe&_nc_ohc=wg8G2IVSmkAAX-VwzqB&_nc_ht=scontent.fdel13-1.fna&oh=86053cf9f9883c6f1999b564355c8024&oe=604B5965" alt="Avatar" style="float: left;width:300px;height:375px;border-radius: 20%">
+      <br><br><br><br> Hello! welcome to my Portfolio.<br> <br> i m sachin dubey, final year B.tech student from Guru Gobind Singh indraprastha Univercity, delhi.<br> Love to do analysis and Visulaization, can make your system data driven,<br> enjoy to work with team, and make network with Professionals having divercifications of fields.<br> Associated with many professional and students for knowledge exchange.<br><br>Glad to connect with you !!! Let's explore together. 
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey" id="Skills">My Skills</h3>
-    <p class="w3-wide">MS-Excel</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:95%"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Skill Section -->
+    
+    <h3 class="w3-padding-16 w3-text-white" id="Skills">My Skills</h3>
+    
+    <div class="column ">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>MS-EXCEL</p>
+      </div>
     </div>
-    <p class="w3-wide">Python</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:85%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>PYTHON</p>
+      </div>
     </div>
-    <p class="w3-wide">Machine Learning</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:80%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>MACHINE LEARNING</p>
+      </div>
     </div>
-    <p class="w3-wide">Deep Learning</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:70%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>DEEP LEARNING</p>
+      </div>
     </div>
-    <p class="w3-wide">Power BI</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:85%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>POWER BI</p>
+      </div>
     </div>
-    <p class="w3-wide">Tableau</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:85%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>TABLEAU</p>
+      </div>
     </div>
-    <p class="w3-wide">MySQL</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:85%"></div>
+    <br>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>MySQL</p>
+      </div>
     </div>
-    <p class="w3-wide">Mathmatics & Stats</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:95%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>Maths & Stats</p>
+      </div>
     </div>
-    <p class="w3-wide">NLP</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:70%"></div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>NLP</p>
+      </div>
     </div>
-    <p class="w3-wide">MS-Office</p>
-    <div class="w3-white">
-      <div class="w3-blue" style="height:28px;width:95%"></div>
-    </div><br>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>MS-OFFICE</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="fa fa-smile-o"></i></p>
+        <p>FLASK</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card w3-hover-blue" >
+        <p><i class="">IDE :</i></p>
+        <p>Anaconda + Pycharm + G.Colab</p>
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    
 
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
@@ -147,13 +275,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section" type="submit">
-      <i class="fa fa-download"></i> <a href="https://drive.google.com/file/d/1YB3LFOwwh1LpgMbl_N8aes6g6dXDdXBC/view?usp=sharing" target="_blank" class="w3-hover-text-green"> Download Resume</a>
+      <i class="fa fa-download" style="font-size:24px"></i> <a href="https://drive.google.com/file/d/1YB3LFOwwh1LpgMbl_N8aes6g6dXDdXBC/view?usp=sharing" target="_blank" class="w3-hover-text-green"> Download CV</a>
     </button>
     <button class="w3-button w3-blue w3-padding-large w3-section" type="submit"><i class="fa fa-check-square-o" style="font-size:24px"> </i><a href="https://www.linkedin.com/in/sachin-dubey-2b883b1b0/" target="_blank"  class="w3-hover-text-green" > Hire Sachin</a></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-
-    <!-- Grid for pricing tables -->
+    <!-- Grid for Projects tables -->
     <h3 class="w3-padding-16 w3-text-light-grey" id="project">My Projects</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
@@ -207,8 +343,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
     <!-- End Grid/Pricing tables -->
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
 
-    <!-- Testimonials -->
+
+    <!-- internship -->
     <h3 class="w3-padding-24 w3-text-light-grey" id="internship" >Internships</h3>
     <img src="https://media-exp1.licdn.com/dms/image/C560BAQEo215433dJ7w/company-logo_200_200/0/1519874420160?e=1618444800&v=beta&t=lq5z-TU0R5TUdU-UVPlnrOuGpUwpIXcAnVfAzhIuaO4" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Ecom express</span> | Business Analyst Intern |</p>
@@ -216,7 +366,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQF8PYWUqKJZtw/company-logo_200_200/0/1598037830577?e=1618444800&v=beta&t=57B5rO1m9gRHLoo-0mPRXyxbARBiGO6D_5yOofFdkBs" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Equiseed Wealth</span>| Data Science Intern |</p>
-    <p>Equiseed Wealth is a One-Stop solution to All Your Financial Needs,they Offer Exclusive and Unbiased Wealth Management Servies with Customer-Centric Approach. i worked here as to analyse and in the process of develop of the dashboard on company website, analyse financial data for risk and portfolio calculation</p><br>
+    <p>Equiseed Wealth is a One-Stop solution to All Your Financial Needs,they Offer Exclusive and Unbiased Wealth Management Servies with Customer-Centric Approach.<br> i worked here as to analyse and in the process of develop of the dashboard on company website, analyse financial data for risk and portfolio calculation</p><br>
 
     <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFrehYWSWX7ag/company-logo_100_100/0/1593009855920?e=1618444800&v=beta&t=GnvhTJ94_kAu8GSXI701zD85wemc34-s8ptGboKNY8g" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Pi Analytix</span>| Machine learn Intern |</p>
@@ -225,8 +375,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFeBixANqwkJg/company-logo_200_200/0/1593597937230?e=1618444800&v=beta&t=2Cmq4sypijLc2go7U_11tv7o_UJCo7V-l4fl8Qu69Bo" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">MedTourEasy</span>| Business Analyst Intern |</p>
-    <p>MedTourEasy, a global healthcare company, provides you the informational resources needed to evaluate your global options. | Worked on dashboard Using Power bi for
-WHO very large database | </p><br>
+    <p>MedTourEasy, a global healthcare company, provides you the informational resources needed to evaluate your global options. Worked on dashboard Using Power bi for
+WHO very large dataset  </p><br>
 
 	<img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHDkrX07aEN-g/company-logo_200_200/0/1576214062901?e=1618444800&v=beta&t=mHJZIgGgkV-3L9U5mBPKTAGMoT6PYTjs50jDbQpvkjY" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">StepUp Analytics</span>| Data Science Intern |</p>
@@ -264,22 +414,12 @@ Tableau dashboard of US supermarket sales data.</p><br>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i><a href="https://www.sachindubey@bpitindia.com" target="_blank" class="w3-hover-text-green"> SEND MESSAGE </a>
-        </button>
-      </p>
-    </form>
+    
   <!-- End Contact Section -->
   </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-blue w3-xlarge">
+  <footer class="w3-content w3-padding-64 w3-text-blue w3-large">
     <button class="w3-button w3-blue w3-padding-large w3-section" type="submit">
       <i class="fa fa-linkedin w3-hover-opacity"></i> <a href="https://www.linkedin.com/in/sachin-dubey-2b883b1b0/" target="_blank" class="w3-hover-text-green">Connect</a>
     </button>
